@@ -25,7 +25,7 @@ int main(){
         long f = a-b;
         printf("%ld\n", f);
     }
-    else if(strcmp(c, "*") == 0)
+    else if(strcmp(c, "*") == 0 || (strcmp(c, "mul") == 0) || (strcmp(c, "multiple") == 0))
     {
         long f = a*b;
         printf("%ld\n", f);
