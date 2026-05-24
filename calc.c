@@ -15,12 +15,12 @@ int main(){
     scanf("%ld", &b);
     char c[99];
     scanf("%s", &c);
-    if(strcmp(c, "+") == 0 || (c, "sum") == 0 || (c, "plus") == 0)
+    if(strcmp(c, "+") == 0 || (strcmp(c, "sum") == 0) || (strcmp(c, "plus") == 0))
     {
         long f = a+b;
         printf("%ld\n", f);
     }
-    else if(strcmp(c, "-") == 0 || (c, "min") == 0 || (c, "minus") == 0)
+    else if(strcmp(c, "-") == 0 || (strcmp(c, "min") == 0) || (strcmp(c, "minus") == 0))
     {
         long f = a-b;
         printf("%ld\n", f);
