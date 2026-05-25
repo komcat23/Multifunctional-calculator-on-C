@@ -3,7 +3,7 @@
 #include<math.h>
 
 int main(){
-	printf("*==================67======================*\n");
+	printf("*========================================*\n");
     printf("Instruction:\n");
     printf("1. Write first number\n");
     printf("2. Write second number\n");
