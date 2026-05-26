@@ -30,20 +30,20 @@ int main(){
         long f = a*b;
         printf("%ld\n", f);
     }
-    else if(strcmp(c, "**") == 0)
+    else if(strcmp(c, "**") == 0 || (strcmp(c, "exp") == 0) || (strcmp(c, "pow") == 0))
     {
         long f = pow(a,b);
         printf("%ld\n", f);
     }
-    else if(strcmp(c, "/") == 0)
+    else if(strcmp(c, "/") == 0 || (strcmp(c, "div") == 0))
     {
         double f = a/b;
         printf("%lf\n", f);
     }
     else if(strcmp(c, "%") == 0)
     {
-        double f = a%b;
-        printf("%lf\n", f);
+        long f = a%b;
+        printf("%ld\n", f);
     }
     else if(strcmp(c, "log") == 0)
     {
@@ -64,6 +64,11 @@ int main(){
     else if(strcmp(c, "log+mul") == 0)
     {
         double f = log(a)*log(b);
+        printf("%lf\n", f);
+    }
+    else if(strcmp(c, "log+div") == 0)
+    {
+        double f = log(a)/log(b);
         printf("%lf\n", f);
     }
     else if(strcmp(c, "sqrt") == 0)        
@@ -87,6 +92,11 @@ int main(){
     	double f = sqrt(a)*sqrt(b);
         printf("%lf\n", f);
     }
+    else if(strcmp(c, "sqrt+div") == 0)
+    {
+    	double f = sqrt(a)/sqrt(b);
+        printf("%lf\n", f);
+    }
     else if(strcmp(c, "cbrt") == 0)             
     {                                           
         double f = cbrt(a);
@@ -106,6 +116,11 @@ int main(){
     else if(strcmp(c, "cbrt+mul") == 0)
     {
         double f = cbrt(a)*cbrt(b);
+        printf("%lf\n", f);
+    }
+    else if(strcmp(c, "cbrt+div") == 0)
+    {
+        double f = cbrt(a)/cbrt(b);
         printf("%lf\n", f);
     }
     else
