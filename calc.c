@@ -71,6 +71,11 @@ int main(){
         double f = log(a)/log(b);
         printf("%lf\n", f);
     }
+    else if(strcmp(c, "log+pow") == 0)
+    {
+        double f = pow(log(a),log(b));
+        printf("%lf\n", f);
+    }
     else if(strcmp(c, "sqrt") == 0)        
     {
         double f = sqrt(a);
@@ -97,6 +102,11 @@ int main(){
     	double f = sqrt(a)/sqrt(b);
         printf("%lf\n", f);
     }
+    else if(strcmp(c, "sqrt+pow") == 0)
+    {
+    	double f = pow(sqrt(a),sqrt(b));
+        printf("%lf\n", f);
+    }
     else if(strcmp(c, "cbrt") == 0)             
     {                                           
         double f = cbrt(a);
@@ -121,6 +131,11 @@ int main(){
     else if(strcmp(c, "cbrt+div") == 0)
     {
         double f = cbrt(a)/cbrt(b);
+        printf("%lf\n", f);
+    }
+    else if(strcmp(c, "cbrt+pow") == 0)
+    {
+        double f = pow(cbrt(a),cbrt(b));
         printf("%lf\n", f);
     }
     else
