@@ -45,7 +45,7 @@ int main(){
         printf("%lf\n", f);
         system("pause");
     }
-    else if(strcmp(c, "%") == 0)
+    else if(strcmp(c, "%") == 0 || strcmp(c, "mod") == 0)
     {
         long f = a%b;
         printf("%ld\n", f);
@@ -58,25 +58,25 @@ int main(){
         printf("%lf and %lf\n", f,g);
         system("pause");
     }
-    else if(strcmp(c, "log+sum") == 0)
+    else if(strcmp(c, "log+sum") == 0 || strcmp(c, "log+plus") == 0)
     {
         double f = log(a)+log(b);
         printf("%lf\n", f);
         system("pause");
     }
-    else if(strcmp(c, "log+min") == 0)
+    else if(strcmp(c, "log+min") == 0 || strcmp(c, "log+minus") == 0)
     {
         double f = log(a)-log(b);
         printf("%lf\n", f);
         system("pause");
     }
-    else if(strcmp(c, "log+mul") == 0)
+    else if(strcmp(c, "log+mul") == 0 || strcmp(c, "log+multiple") == 0)
     {
         double f = log(a)*log(b);
         printf("%lf\n", f);
         system("pause");
     }
-    else if(strcmp(c, "log+div") == 0)
+    else if(strcmp(c, "log+div") == 0 || strcmp(c, "log+division") == 0)
     {
         double f = log(a)/log(b);
         printf("%lf\n", f);
@@ -95,19 +95,19 @@ int main(){
         printf("%lf and %lf\n", f,g);
         system("pause");
     }
-    else if(strcmp(c, "sqrt+sum") == 0)
+    else if(strcmp(c, "sqrt+sum") == 0 || strcmp(c, "sqrt+plus") == 0)
     {
         double f = sqrt(a)+sqrt(b);
         printf("%lf\n", f);
         system("pause");
     }
-    else if(strcmp(c, "sqrt+min") == 0)
+    else if(strcmp(c, "sqrt+min") == 0 || strcmp(c, "sqrt+minus") == 0)
     {
     	double f = sqrt(a)-sqrt(b);
         printf("%lf\n", f);
         system("pause");
     }
-    else if(strcmp(c, "sqrt+mul") == 0)
+    else if(strcmp(c, "sqrt+mul") == 0 || strcmp(c, "sqrt+multiple") == 0)
     {
     	double f = sqrt(a)*sqrt(b);
         printf("%lf\n", f);
@@ -132,25 +132,25 @@ int main(){
         printf("%lf and %lf\n", f,g);
         system("pause");
     }
-    else if(strcmp(c, "cbrt+sum") == 0)
+    else if(strcmp(c, "cbrt+sum") == 0 || strcmp(c, "cbrt+plus") == 0)
     {
         double f = cbrt(a)+cbrt(b);
         printf("%lf\n", f);
         system("pause");
     }
-    else if(strcmp(c, "cbrt+min") == 0)
+    else if(strcmp(c, "cbrt+min") == 0 || strcmp(c, "cbrt+minus") == 0)
     {
         double f = cbrt(a)-cbrt(b);
         printf("%lf\n", f);
         system("pause");
     }
-    else if(strcmp(c, "cbrt+mul") == 0)
+    else if(strcmp(c, "cbrt+mul") == 0 || strcmp(c, "cbrt+multiple") == 0)
     {
         double f = cbrt(a)*cbrt(b);
         printf("%lf\n", f);
         system("pause");
     }
-    else if(strcmp(c, "cbrt+div") == 0)
+    else if(strcmp(c, "cbrt+div") == 0 || strcmp(c, "cbrt+division") == 0)
     {
         double f = cbrt(a)/cbrt(b);
         printf("%lf\n", f);
