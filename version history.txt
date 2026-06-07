@@ -6,5 +6,4 @@ v0.0.3_1 - fix bugs and added support for computational operator synonyms(pow - 
 v0.0.3_2 - fix bugs again with .exe file(programm was early closed)
 v0.0.3_3 - fix bugs with combined surgery.
 v1.0.0 - THE RELEASE! four instruments(calc,calcf,pi and circle_calc) and the system commands(exit,clear)
-
-//I'm doing a biggest program update......
+v1.0.1 - fix bugs and made pow() and exp() separately
