@@ -34,7 +34,7 @@ int calc()
         long f = a*b;
         printf("%ld\n", f);
     }
-    else if(strcmp(c, "**") == 0 || (strcmp(c, "exp") == 0) || (strcmp(c, "pow") == 0))
+    else if(strcmp(c, "**") == 0 || (strcmp(c, "pow") == 0))
     {
         long f = pow(a,b);
         printf("%ld\n", f);
@@ -258,7 +258,7 @@ int calcf()
         double f = a*b;
         printf("%lf\n", f);
     }
-    else if(strcmp(c, "**") == 0 || (strcmp(c, "exp") == 0) || (strcmp(c, "pow") == 0))
+    else if(strcmp(c, "**") == 0 || (strcmp(c, "pow") == 0))
     {
         double f = pow(a,b);
         printf("%lf\n", f);
@@ -501,6 +501,21 @@ int circle_calc()
 	return 0;
 }
 
+int sphere_calc()
+{
+	printf("*========================================================================================================*\n");
+    printf("Instruction:\n");
+    printf("Write the radius of sphere\n");
+    printf("*========================================================================================================*\n");		
+	int R;
+	double pi = M_PI;
+	scanf("%d", &R);
+	double S = 4*pi*R*R;
+	double V = 4/3*pi*R*R*R;
+	printf("S = %lf cm2\n", S);
+	printf("V = %lf cm3\n", V);
+}
+
 int main()
 {
 	printf("+-----------------------+--------------------------------------------------+\n");
@@ -510,6 +525,7 @@ int main()
     printf("| calcf                 | Calculator for float numbers                     |\n");
     printf("| pi                    | Shows pi number from 0 to 15 decimal points      |\n");
     printf("| circle_calc           | Circle calculator                                |\n");
+    printf("| sphere_calc           | Sphere calculator                                |\n");
     printf("| exit                  | The command for turn off the programm            |\n");
     printf("| clear                 | Clears the entire console screen                 |\n");
     printf("+-----------------------+--------------------------------------------------+\n");
@@ -541,6 +557,10 @@ int main()
 		else if(strcmp(a, "circle_calc") == 0)
 		{
 			circle_calc();
+		}
+		else if(strcmp(a, "sphere_calc") == 0)
+		{
+			sphere_calc();	
 		}
 		else
 		{
