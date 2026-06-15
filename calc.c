@@ -454,6 +454,7 @@ int clear()
     printf("| calcf                 | Calculator for float numbers                     |\n");
     printf("| pi                    | Shows pi number from 0 to 15 decimal points      |\n");
     printf("| circle_calc           | Circle calculator                                |\n");
+    printf("| sphere_calc           | Sphere calculator                                |\n");
     printf("| exit                  | The command for turn off the programm            |\n");
     printf("| clear                 | Clears the entire console screen                 |\n");
     printf("+-----------------------+--------------------------------------------------+\n");
