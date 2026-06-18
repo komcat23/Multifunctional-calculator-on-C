@@ -8,7 +8,7 @@
 int calc()
 {
 	printf("*========================================*\n");
-    printf("Instruction\n");
+    printf("Instruction:\n");
     printf("1. Write first number\n");
     printf("2. Write second number\n");
     printf("3. Choice the calculation method\n");
