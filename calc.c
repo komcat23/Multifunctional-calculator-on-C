@@ -3,10 +3,8 @@
 #include<math.h>
 #include<string.h>
 
-//Не выложено:
-//1.0.5 added exp as a single function
-//1.0.6 added log4 for calc and calcf
-//1.0.6_1 fix bugs with round in calcf
+
+
 int calc()
 {
 	printf("*========================================*\n");
