@@ -3,8 +3,10 @@
 #include<math.h>
 #include<string.h>
 
-
-
+//Не выложено:
+//1.0.5 added exp as a single function
+//1.0.6 added log4 for calc and calcf
+//1.0.6_1 fix bugs with round in calcf
 int calc()
 {
 	printf("*========================================*\n");
@@ -65,6 +67,12 @@ int calc()
         	return 1;
 		}
     }
+    else if(strcmp(c, "exp") == 0)
+	{
+    	double f = exp(a);
+    	double d = exp(b);
+		printf("%lf and %lf", f,d);	
+	}
     else if(strcmp(c, "log") == 0)
     {
         double f = log(a);
@@ -137,7 +145,45 @@ int calc()
 	{
     	double f = exp(log2(a));
     	double d = exp(log2(b));
-		printf("%lf and %lf", f,d);	
+		printf("%lf and %lf\n", f,d);	
+	}
+	else if(strcmp(c, "log4") == 0)
+	{
+		double f =  log2(a)/2;
+		double d =  log2(b)/2;
+		printf("%lf and %lf\n", f,d);	
+	}
+	else if(strcmp(c, "log4+sum") == 0 || strcmp(c, "log4+plus") == 0)
+    {
+        double f = log2(a)/2+log2(b)/2;
+        printf("%lf\n", f);
+    }
+    else if(strcmp(c, "log4+min") == 0 || strcmp(c, "log4+minus") == 0)
+    {
+        double f = log2(a)/2-log2(b)/2;
+        printf("%lf\n", f);
+    }
+    else if(strcmp(c, "log4+mul") == 0 || strcmp(c, "log4+multiple") == 0)
+    {
+        double f = log2(a)/2*log2(b)/2;
+        printf("%lf\n", f);
+    }
+    else if(strcmp(c, "log4+div") == 0 || strcmp(c, "log4+division") == 0)
+    {
+    	double d = log2(b)/2;
+        double f = log2(a)/2/d;
+        printf("%lf\n", f);
+    }
+    else if(strcmp(c, "log4+pow") == 0)
+    {
+        double f = pow(log2(a)/2,log2(b)/2);
+        printf("%lf\n", f);
+    }
+    else if(strcmp(c, "log4+exp") == 0)
+	{
+    	double f = exp(log2(a)/2);
+    	double d = exp(log2(b)/2);
+		printf("%lf and %lf\n", f,d);	
 	}
     else if(strcmp(c, "log10") == 0)
     {
@@ -313,8 +359,8 @@ int calcf()
     {
         int f = round(a);
         int g = round(b);
-        printf("%f ", f);
-        printf("and %f\n", g);
+        printf("%d ", f);
+        printf("and %d\n", g);
 
     }
     else if(strcmp(c, "+") == 0 || (strcmp(c, "sum") == 0) || (strcmp(c, "plus") == 0))
@@ -350,6 +396,12 @@ int calcf()
         	return 1;
 		}
     }
+    else if(strcmp(c, "exp") == 0)
+	{
+    	double f = exp(a);
+    	double d = exp(b);
+		printf("%lf and %lf", f,d);	
+	}
     else if(strcmp(c, "log") == 0)
     {
         double f = log(a);
@@ -423,6 +475,44 @@ int calcf()
     	double f = exp(log2(a));
     	double d = exp(log2(b));
 		printf("%lf and %lf", f,d);	
+	}
+	else if(strcmp(c, "log4") == 0)
+	{
+		double f =  log2(a)/2;
+		double d =  log2(b)/2;
+		printf("%lf and %lf\n", f,d);	
+	}
+	else if(strcmp(c, "log4+sum") == 0 || strcmp(c, "log4+plus") == 0)
+    {
+        double f = log2(a)/2+log2(b)/2;
+        printf("%lf\n", f);
+    }
+    else if(strcmp(c, "log4+min") == 0 || strcmp(c, "log4+minus") == 0)
+    {
+        double f = log2(a)/2-log2(b)/2;
+        printf("%lf\n", f);
+    }
+    else if(strcmp(c, "log4+mul") == 0 || strcmp(c, "log4+multiple") == 0)
+    {
+        double f = log2(a)/2*log2(b)/2;
+        printf("%lf\n", f);
+    }
+    else if(strcmp(c, "log4+div") == 0 || strcmp(c, "log4+division") == 0)
+    {
+    	double d = log2(b)/2;
+        double f = log2(a)/2/d;
+        printf("%lf\n", f);
+    }
+    else if(strcmp(c, "log4+pow") == 0)
+    {
+        double f = pow(log2(a)/2,log2(b)/2);
+        printf("%lf\n", f);
+    }
+    else if(strcmp(c, "log4+exp") == 0)
+	{
+    	double f = exp(log2(a)/2);
+    	double d = exp(log2(b)/2);
+		printf("%lf and %lf\n", f,d);	
 	}
     else if(strcmp(c, "log10") == 0)
     {
@@ -594,12 +684,12 @@ int pi()
 
 int circle_calc()
 {
-	printf("*========================================================================================================*\n");
+	printf("*==============================================================================================================================*\n");
     printf("Instruction:\n");
     printf("1. Write what you want to search: the entire circle(circle) or its sector(sector)\n");
     printf("2. If you want to search for a circle, just write the radius(cm) of the circle\n");
-    printf("3. If you want to search for sector, just write the radius of the circle(cm) and the angle of the sector\n");
-    printf("*========================================================================================================*\n");		
+    printf("3. If you want to search for sector, just write the radius of the circle(cm) and the angle of the sector(in gradus of celcium)\n");
+    printf("*=============================================================================================================================*\n");		
     char a[99];
     scanf("%s", a);
     if(strcmp(a,"circle") == 0)
@@ -696,7 +786,7 @@ int main()
 		else if(strcmp(a, "pi") == 0)
 		{
 			pi();
-		}	
+		}
 		else if(strcmp(a, "circle_calc") == 0)
 		{
 			circle_calc();
