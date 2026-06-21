@@ -1,5 +1,5 @@
 The version history:
-v0.0.1 - starter scripth with operators(+,-,*,/)
+v0.0.1 - starter scripth with calc and calcf and with operators(+,-,*,/)
 v0.0.2 - added operators (log, pow, sqrt and cbrt)
 v0.0.3 - added combined surgery(log+sum, sqrt+pow, ...)
 v0.0.3_1 - fix bugs and added support for computational operator synonyms(pow - exp, sum-plus)
